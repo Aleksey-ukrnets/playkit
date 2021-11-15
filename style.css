@@ -559,7 +559,7 @@ ul {
 .games__annotation {
   color: #1e1e1e99;
   margin: 14px 0 36px 0;
-  max-width: 80%;
+  max-width: 75%;
 }
 .games__item {
   box-sizing: border-box;
