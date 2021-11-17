@@ -1,0 +1,44 @@
+//main: ../style.less
+.workflow {
+    border-top: 1px solid #1e1e1e;
+    &__main {
+        box-sizing: border-box;
+        padding: 40px 50px 0;
+    }
+    &_item-list {
+        margin: 0 -10px;
+        font-size: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    &-item {
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 10px;
+        width: 33.33%;
+        &_content {
+            box-sizing: border-box;
+            padding: 0 40px 0;
+        }
+        &_label {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: -52px;
+            line-height: 24px;
+            font-size: 12px;
+            background-color: #1e1e1e;
+            text-align: center;
+            border-radius: 50%;
+            color: #fff;
+        }
+        &_title {
+            font-size: 18px;
+            margin: 0 0 14px;
+        }
+        &_annotation {
+            font-size: 15px;
+            color: @text-color;
+        }
+    }
+}

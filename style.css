@@ -659,3 +659,46 @@ ul {
   padding-bottom: 2px;
   border-bottom: 1px solid rgba(30, 30, 30, 0.15);
 }
+.workflow {
+  border-top: 1px solid #1e1e1e;
+}
+.workflow__main {
+  box-sizing: border-box;
+  padding: 40px 50px 0;
+}
+.workflow_item-list {
+  margin: 0 -10px;
+  font-size: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.workflow-item {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 33.33%;
+}
+.workflow-item_content {
+  box-sizing: border-box;
+  padding: 0 40px 0;
+}
+.workflow-item_label {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -52px;
+  line-height: 24px;
+  font-size: 12px;
+  background-color: #1e1e1e;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.workflow-item_title {
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+.workflow-item_annotation {
+  font-size: 15px;
+  color: rgba(30, 30, 30, 0.6);
+}
