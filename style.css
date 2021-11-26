@@ -542,6 +542,9 @@ ul {
   color: #1e1e1e;
   font-size: 15px;
 }
+.active_rent {
+  background-color: rgba(30, 30, 30, 0.6);
+}
 .home_games {
   margin: 0 0 100px 0;
 }
@@ -757,6 +760,7 @@ ul {
 .plus {
   display: flex;
   margin: 5px 0 0 110px;
+  transition: 0.7s ease;
 }
 .line__x {
   background-color: black;
@@ -770,12 +774,50 @@ ul {
 .line__y {
   width: 1px;
   height: 25px;
-  transition: 0.7s ease;
-}
-.plus_active {
-  z-index: 100;
-  display: block;
 }
 .open .faq-item .answer {
   display: block;
+}
+.rotate_active {
+  transition: 0.6s ease;
+  transform: rotate(45deg);
+}
+.home_documents {
+  margin: 0 0 80px;
+}
+.documents {
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+.documents__list {
+  display: flex;
+  margin: 50px -10px 0;
+  font-size: 0;
+}
+.documents_item {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 20%;
+}
+.documents-item {
+  box-sizing: border-box;
+  padding: 20px 30px 20px 20px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 6px;
+  height: 220px;
+}
+.documents-item a {
+  position: absolute;
+  bottom: 20px;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.15);
+  color: rgba(30, 30, 30, 0.6);
+  font-size: 12px;
+}
+.documents-item__icon {
+  margin: 0 0 20px;
+}
+.documents-item__name {
+  font-size: 13px;
+  margin: 0 0 16px;
 }

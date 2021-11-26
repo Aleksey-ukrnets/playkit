@@ -1,14 +1,48 @@
+document.addEventListener('DOMContentLoaded',function(event){
+    const rent = document.querySelectorAll('.rent__period-item')
+    if(rent) {
+        rent.forEach(function(el,key){
+            el.addEventListener('click',function(){
+                el.classList.toggle('active_rent')
+            
+                rent.forEach(function(element,keys){
+                    if(key!==keys){
+                        element.classList.remove('active_rent')
+                    }
+                    // console.log(keys)
+                })
+
+            })
+        })
+    }
+})
+
+
 const faqItem = document.querySelectorAll('.faq__item') 
 
 const Open = (event) => {
       const target = event.currentTarget
       target.classList.toggle('open')
+      
 
 }
 
 faqItem.forEach(el => {
     el.addEventListener('click',Open)
 })
+
+const plus = document.querySelectorAll('.plus')
+
+const changeDisplay = (event) =>{
+    const parentNode = event.currentTarget
+    parentNode.classList.toggle('rotate_active')
+    
+}
+plus.forEach((block)=> {
+    block.addEventListener('click',changeDisplay)
+ })
+   
+
 
 // const crossChange = document.getElementById('plus');
 // crossChange.addEventListener('click', () => {
@@ -71,16 +105,7 @@ faqItem.forEach(el => {
 // )
  
 //////////////////////////////////////////////////////////////////
-// const plus = document.querySelectorAll('.plus')
 
-// const changeDisplay = (event) =>{
-//     const parentNode = event.currentTarget
-//     console.log()
-// }
-// plus.forEach((block)=> {
-//     block.addEventListener('click',changeDisplay)
- //})
-   
 ///////////////////////////////////////////////////////////////
 // function fun (){
 //     const answer = document.querySelectorAll('.answer')

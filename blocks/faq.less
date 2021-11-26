@@ -48,6 +48,8 @@
 .plus {
     display: flex;
     margin: 5px 0 0 110px;
+    transition: 0.7s ease;
+    
 }
 .line__x{
         background-color: black;
@@ -61,12 +63,11 @@
 .line__x, .line__y {
     width: 1px;
     height: 25px;
-    transition: 0.7s ease;
-}
-.plus_active {
-    z-index: 100;
-    display: block;
 }
 .open .faq-item .answer {
  display: block;
+}
+.rotate_active {
+    transition: 0.6s ease;
+    transform: rotate(45deg);
 }
